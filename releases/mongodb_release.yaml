@@ -1,14 +1,14 @@
 ---
-  apiVersion: helm.integrations.flux.weave.works/v1alpha2
-  kind: FluxHelmRelease
-  metadata:
-    name: mongodb
-    namespace: test
-  spec:
-    chartGitPath: mongodb
-    releaseName: mongodb-database
-    values:
-      image: bitnami/mongodb:3.7.1-r1
-      imagePullPolicy: IfNotPresent
-      persistence:
-        enabled: false
+apiVersion: helm.integrations.flux.weave.works/v1alpha2
+kind: FluxHelmRelease
+metadata:
+  name: mongodb
+  namespace: test
+spec:
+  chartGitPath: mongodb
+  releaseName: mongodb-database
+  values:
+    image: bitnami/mongodb:_
+    imagePullPolicy: IfNotPresent
+    persistence:
+      enabled: false
