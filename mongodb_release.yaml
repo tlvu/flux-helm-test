@@ -5,6 +5,7 @@ metadata:
   name: mongodb
   namespace: test
 spec:
+  # test add a comment in yaml file
   chartGitPath: https://github.com/tlvu/flux-helm-test/tree/master/charts/mongodb
   releaseName: mongodb-database
   values:
