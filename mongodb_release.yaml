@@ -5,7 +5,7 @@ metadata:
   name: mongodb
   namespace: test
 spec:
-  chartGitPath: https://github.com/tlvu/flux-helm-test/tree/master/charts/mongodb
+  chartGitPath: mongodb
   releaseName: mongodb-database
   values:
     image: bitnami/mongodb:3.7.9-r19
